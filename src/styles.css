@@ -14,8 +14,8 @@ body{
 
 .nav {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: darkgrey;
-    color:rgb(43, 141, 226);
+    background-color: rgb(165, 153, 244);
+    color:rgb(232, 229, 32);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@ body{
 }
 
 .nav a{
-color: rgb(66, 114, 237);
+color: rgb(246, 240, 53);
 text-decoration: none;
 height: 100%;
 display: flex;
@@ -47,10 +47,20 @@ padding: .25rem;
 
 
 .nav li:active {
-    background-color: rgb(238, 0, 255);
+    background-color: rgba(0, 26, 255, 0.765);
 
 }
 
 .nav li:hover {
     background-color: dodgerblue;
+}
+
+h1 {
+    color: gold;
+    font-family: fantasy;
+}
+h2 {
+    color: gold;
+    font-style: italic;
+    font-family: fantasy;
 }

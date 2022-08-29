@@ -4,7 +4,8 @@ export default function Navbar() {
     return <nav className="nav">
         <Link to='/' className='site-title'>The Dharma Drop</Link>
         <ul>
-            <CustomLink to="/pricing">Pricing</CustomLink>
+            <CustomLink to="/signup">Sign-Up</CustomLink>
+            <CustomLink to="/login">Login</CustomLink>
             <CustomLink to="/about">About</CustomLink>
         </ul>
 
