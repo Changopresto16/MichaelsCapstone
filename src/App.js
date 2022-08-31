@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import Navbar from "./Navbar";
-import About from "./pages/About";
+import Navbar from "./components/Navbar";
+import Moods from "./pages/Moods";
 import Home from "./pages/Home";
 import SignUp from "./pages/SignUp";
 import Login from "./pages/Login";
@@ -18,7 +18,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/SignUp" element={<SignUp />} />
       <Route path='/login' element={<Login />} />
-      <Route path="/About" element={<About />} />
+      <Route path="/Moods" element={<Moods />} />
     </Routes>
     </div>
   

@@ -1,27 +1,28 @@
-import React, { Component, useEffect } from 'react'
+import React, { Component } from 'react'
 import '../styles.css'
 
 export default class Login extends Component {
     render() {
         return (
-            function App() {
 
-                function handleCallbackResponse(response) {
-                    console.log("Encoded JWT ID token: " + response);
-                }
-                useEffect(() => {
-                    /* global google */
-                    google.accounts.id.initialize({
-                        client_id: "616610964568-bfl9rak1p3om6a1del6mmgct3von9562.apps.googleusercontent.com",
-                        callback: handleCallbackResponse
-                    });
+            <div>
+                <h1>LOGIN PAGE </h1>
 
-                    google.accounts.id.renderButton(
-                        document.getElementById("signInDiv"),
-                        { theme: "outline", size: "large" }
-                    );
-                }, [])}
+
+                <form className="col-2">
+                    <div className="email">
+                        <label for="exampleInputEmail1" className="form-label">Email address</label>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+
+                    </div>
+                    <div className="password">
+                        <label for="exampleInputPassword1" className="form-label">Password</label>
+                        <input type="password" className="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <button type="submit" className="btnsignup">Submit</button>
+                </form>
+            </div>
         )
-            
+
     }
 };

@@ -13,12 +13,12 @@ body{
 }
 
 .nav {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Baumans', cursive;
     background-color: rgb(165, 153, 244);
     color:rgb(232, 229, 32);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    font-size: large;
     gap: 2rem;
     padding: 0 1rem;
     width: 100%;
@@ -28,7 +28,8 @@ body{
 }
 
 .nav ul {
-    padding: 0;
+    display: inline-flex;
+    padding-left: 60%;
     margin: 0;
     list-style: none;
     display: flex;
@@ -57,10 +58,64 @@ padding: .25rem;
 
 h1 {
     color: gold;
-    font-family: fantasy;
+    font-family: 'Baumans', cursive;
+    background-color: rgb(165, 153, 244);
+    border: 10px;
+    border-radius: 20%;
+    border-style: double;
+    width: fit-content;
+    opacity: 90%;
+    padding: 3%;
+    margin: auto;
 }
 h2 {
     color: gold;
     font-style: italic;
-    font-family: fantasy;
+    font-family: 'Baumans', cursive;
+}
+
+.signbox{
+    box-sizing: content-box;
+    box-shadow: inset;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+
+    
+}
+
+.box{
+    justify-content: center;
+}
+
+.col-2{
+    box-sizing: content-box;
+    color: rgb(0, 255, 191);
+    font-family: 'Baumans', cursive;
+    background-color: rgb(165, 153, 244);
+    border: 5px;
+    border-radius: 10%;
+    border-style: solid;
+    opacity: 90%;
+    display:inline-flexbox;
+    align-items: center;
+    padding: .25rem;
+    margin: auto;
+    margin-top: 5%;
+    width: fit-content;
+    height: fit-content;
+    
+
+}
+
+.form-control{
+    margin: 20px;
+    padding-left: 20%;
+}
+
+.btnsignup{
+    color: rgb(165, 153, 244);
+    background-color:aqua;
+    font-size: x-large;
+
 }
