@@ -6,7 +6,8 @@ import {LinkContainer} from 'react-router-bootstrap'
 import "./Navbar.css"
 
 
-export default function Navbar() {
+
+export default function Navbar(props) {
     const [show, setShow] = useState(false);
 
     return <nav className="nav">
@@ -28,13 +29,21 @@ export default function Navbar() {
     <Offcanvas.Header closeButton>
       <Offcanvas.Title>Offcanvas</Offcanvas.Title>
     </Offcanvas.Header>
-    <Offcanvas.Body>
+    <Offcanvas.Body>   
+      {props.user.username ?
+      <LinkContainer to="/login">
+      <Button onClick={props.logMeOut}>Sign Out</Button>
+      </LinkContainer>
+      :
+      <>
       <LinkContainer to="/login">
         <Button>Login</Button>
       </LinkContainer>
       <LinkContainer to="/signup">
         <Button>SignUp</Button>
       </LinkContainer>
+      </>}
+      
       <LinkContainer to="/mood">
         <Button>Moods</Button>
       </LinkContainer>
